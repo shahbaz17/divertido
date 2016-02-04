@@ -1,4 +1,4 @@
-html { 
+body { 
   background: url(1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,6 +11,12 @@ html {
 	left: 400px;
 	font-size: 24px;
 }
+a{
+	color: #CF000F;
+}
+#hidden{
+	display: none;
+}
 *{
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -19,4 +25,21 @@ html {
   -ms-user-select: none;       /* IE/Edge */
   user-select: none;           /* non-prefixed version, currently
                                   not supported by any browser */
+}
+@media (max-width: 768px) {
+  body {
+    background-size: 100%;
+  }
+  #bottom{
+  	bottom: 10px;
+  	left: 0;
+  	font-size: 18px;
+  }
+  #hidden{
+  	display: block;
+  	font-size: 24px;
+  	margin-top: 100px;
+  	font-family: sans-serif;
+  	color: #00B16A;
+  }
 }
